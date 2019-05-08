@@ -1,20 +1,20 @@
 ﻿/// <summary>
-/// The auxiliar MPoint file.
+/// The MPoint.cs file.
 /// </summary>
 namespace MontecarloAlgorithms
 {
     /// <summary>
-    /// A points structure.
+    /// The MPoint struct.
     /// </summary>
     public struct MPoint
     {
         /// <summary>
-        /// X value
+        /// The X coordinate.
         /// </summary>
         public double X;
 
         /// <summary>
-        /// Y value
+        /// The Y coordinate.
         /// </summary>
         public double Y;
 
@@ -24,16 +24,16 @@ namespace MontecarloAlgorithms
         public bool insideCircle;
 
         /// <summary>
-        /// MPoint constructor
+        /// Initialization of the MPoint value.
         /// </summary>
-        /// <param name="x">X</param>
-        /// <param name="y">Y</param>
-        /// <param name="insideCircle">insideCircle</param>
+        /// <param name="x">The x value.</param>
+        /// <param name="y">The y value.</param>
+        /// <param name="insideCircle">True if the point is inside the circle.</param>
         public MPoint(double x, double y, bool insideCircle)
         {
             this.X = x;
             this.Y = y;
-            this.insideCircle = insideCircle;
+            this.InsideCircle = insideCircle;
         }
     }
 }
