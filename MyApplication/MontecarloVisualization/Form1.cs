@@ -56,7 +56,7 @@ namespace MontecarloVisualization
 
                 Pen targetPen;
 
-                if (cPoint.insideCircle)
+                if (cPoint.InsideCircle)
                 {
                     targetPen = Pens.Red;
                 }

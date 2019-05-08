@@ -21,7 +21,7 @@ namespace MontecarloAlgorithms
         /// <summary>
         /// insideCircle value
         /// </summary>
-        public bool insideCircle;
+        public bool InsideCircle;
 
         /// <summary>
         /// Initialization of the MPoint value.
