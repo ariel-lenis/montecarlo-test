@@ -1,14 +1,14 @@
 ﻿/// <summary>
-/// MonteCarloPI.cs 
+/// The MonteCarloPI.cs file
 /// </summary>
 namespace MontecarloAlgorithms
 {
+    using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System;
 
     /// <summary>
-    /// MonteCarloPI class
+    /// The MonteCarloPI implementation
     /// </summary>
     public class MonteCarloPI
     {
@@ -24,6 +24,15 @@ namespace MontecarloAlgorithms
 
         /// <summary>
         /// Use this method to generate a new point.
+        /// The MonteCarloPI constructor.
+        /// </summary>
+        public MonteCarloPI()
+        {
+            this.points = new List<MPoint>();
+        }
+
+        /// <summary>
+        /// Method to generate a new point.
         /// </summary>
         public void GeneratePoint()
         {
@@ -44,17 +53,9 @@ namespace MontecarloAlgorithms
         }
 
         /// <summary>
-        /// Constructor
+        /// Generates a new random point.
         /// </summary>
-        public MonteCarloPI()
-        {
-            this.points = new List<MPoint>();
-        }
-
-        /// <summary>
-        /// Generates a new random point
-        /// </summary>
-        /// <returns>The random point</returns>
+        /// <returns>An instance of MPoint.</returns>
         private MPoint GenerateRandomPoint()
         {
             float x = GenerateRandomValue();
