@@ -18,6 +18,11 @@ namespace MontecarloAlgorithms
         private List<MPoint> points;
 
         /// <summary>
+        /// The private declaration of random generator.
+        /// </summary>
+        private Random rnd;
+
+        /// <summary>
         /// The public declaration of points.
         /// </summary>
         public List<MPoint> Points { get { return points; } }
@@ -28,6 +33,7 @@ namespace MontecarloAlgorithms
         /// </summary>
         public MonteCarloPI()
         {
+            this.rnd = new Random();
             this.points = new List<MPoint>();
         }
 
@@ -74,7 +80,6 @@ namespace MontecarloAlgorithms
         /// <returns>The random value</returns>
         private float GenerateRandomValue()
         {
-            Random rnd = new Random();
             return (float)rnd.NextDouble() - 0.5f;
         }
     }
